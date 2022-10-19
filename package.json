@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
+    "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
