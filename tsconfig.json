@@ -10,10 +10,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "baseUrl": ".",
     "lib": [
       "ESNext",
       "DOM"
     ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
     "skipLibCheck": true
   },
   "exclude": [
