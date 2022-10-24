@@ -4,9 +4,7 @@
 </script>
 
 <template>
-  <router-view v-slot="{ Component }">
-    <component :is="Component" />
-  </router-view>
+  <div>测试文件</div>
 </template>
 
 <style scoped>
