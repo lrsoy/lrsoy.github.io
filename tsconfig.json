@@ -20,6 +20,10 @@
         "./src/*"
       ]
     },
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client"
+    ],
     "skipLibCheck": true
   },
   "exclude": [
