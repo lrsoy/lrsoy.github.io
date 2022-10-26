@@ -13,6 +13,9 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { slugify } from './scripts/slugify'
 
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+
 // https://vitejs.dev/config/
 export default defineConfig(() => { // { command, mode }
   return {
@@ -42,14 +45,20 @@ export default defineConfig(() => { // { command, mode }
         imports: [
           'vue',
           'vue-router',
+          '@vueuse/core',
+          '@vueuse/head',
         ],
       }),
       Components({
         extensions: ['vue', 'tsx'],
         dts: true,
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        dirs: ['src/components'],
         directoryAsNamespace: true,
+        resolvers: [
+          IconsResolver({
+            componentPrefix: '',
+          }),
+        ],
       }),
 
       Pages({  // vite-plugin-pages 的配置
@@ -100,6 +109,12 @@ export default defineConfig(() => { // { command, mode }
           })
         },
       }),
+
+      Icons({
+        defaultClass: 'inline',
+        defaultStyle: 'vertical-align: sub;',
+      })
+
     ],
 
     build: {

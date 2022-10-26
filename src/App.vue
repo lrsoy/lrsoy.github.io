@@ -4,8 +4,16 @@
 </script>
 
 <template>
-  <div>测试文件</div>
+  <div class="lrsoy-continer">
+    <header></header>
+    <main>主体</main>
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+.lrsoy-continer {
+  header {
+    @apply w-full h-full;
+  }
+}
 </style>
