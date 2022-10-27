@@ -53,7 +53,6 @@ export default defineConfig(() => { // { command, mode }
         extensions: ['vue', 'tsx'],
         dts: true,
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-        directoryAsNamespace: true,
         resolvers: [
           IconsResolver({
             componentPrefix: '',

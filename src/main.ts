@@ -1,4 +1,5 @@
 // import { createApp } from 'vue'
+import "./styles/index.css"
 import './styles/tailwindcss/index.css'
 import './styles/markdown/markdown.css'
 
