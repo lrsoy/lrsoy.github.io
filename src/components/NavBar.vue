@@ -8,6 +8,7 @@
       <img src="/logo-removebg-preview.png" alt="">
     </router-link>
     <nav class="nav">
+      <ToggleTheme />
     </nav>
   </header>
 </template>
