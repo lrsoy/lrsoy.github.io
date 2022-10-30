@@ -8,6 +8,9 @@
       <img src="/logo-removebg-preview.png" alt="">
     </router-link>
     <nav class="nav">
+      <router-link to="/posts" title="Blog">
+        <span>Blog</span>
+      </router-link>
       <ToggleTheme />
     </nav>
   </header>
@@ -24,12 +27,12 @@ header {
     user-select: none;
 
     img {
-      @apply w-20 h-20 m-[5px];
+      @apply w-20 h-20 m-1;
     }
   }
 
   nav {
-    @apply w-full h-[90px] box-border flex justify-end items-center flex-1;
+    @apply w-full p-8 box-border flex justify-end items-center gap-5;
   }
 }
 </style>  

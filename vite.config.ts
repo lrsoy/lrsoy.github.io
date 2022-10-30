@@ -12,6 +12,7 @@ import Shiki from 'markdown-it-shiki'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { slugify } from './scripts/slugify'
+import TOC from 'markdown-it-table-of-contents'
 
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -105,6 +106,11 @@ export default defineConfig(() => { // { command, mode }
               target: '_blank',
               rel: 'noopener',
             },
+          })
+
+          md.use(TOC, {
+            includeLevel: [1, 2, 3, 4, 5, 6],
+            slugify,
           })
         },
       }),

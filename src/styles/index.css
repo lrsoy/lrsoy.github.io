@@ -8,6 +8,10 @@ html {
   background-color: var(--c-bg);
 }
 
+* {
+  scrollbar-color: var(--c-scrollbar) var(--c-bg);
+}
+
 html.dark {
   --c-bg: #050505;
   --c-scrollbar: #111;
@@ -39,4 +43,12 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--c-scrollbar-hover);
+}
+
+.dark [img-light] {
+  display: none;
+}
+
+html:not(.dark) [img-dark] {
+  display: none;
 }

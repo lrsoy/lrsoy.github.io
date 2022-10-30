@@ -7,8 +7,8 @@ import NavBar from "./components/NavBar.vue";
 <template>
   <div class="lrsoy-continer">
     <NavBar />
-    <main>
-      测试内容
+    <main class="px-7 py-10">
+      <router-view></router-view>
     </main>
   </div>
 </template>
