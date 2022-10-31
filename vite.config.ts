@@ -13,6 +13,7 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { slugify } from './scripts/slugify'
 import TOC from 'markdown-it-table-of-contents'
+import emoji from 'markdown-it-emoji'
 
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -112,6 +113,8 @@ export default defineConfig(() => { // { command, mode }
             includeLevel: [1, 2, 3, 4, 5, 6],
             slugify,
           })
+
+          md.use(emoji)
         },
       }),
 

@@ -9,16 +9,16 @@ html.dark .lrsoy-prose {
   --fg: #555;
   --fg-deep: #222;
   --fg-deeper: #000;
-
   color: var(--fg);
 }
 
 
 .lrsoy-prose {
   color: var(--fg);
-  max-width: 65ch;
+  max-width: 80ch;
   font-size: 1rem;
   line-height: 1.75;
+  margin: 0 auto;
 }
 
 .lrsoy-prose [class~="lead"] {

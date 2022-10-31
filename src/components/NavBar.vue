@@ -18,7 +18,7 @@
 
 <style lang="scss">
 header {
-  @apply w-full h-full z-40;
+  @apply w-full z-40;
 
   .logo-icon {
     @apply fixed;
