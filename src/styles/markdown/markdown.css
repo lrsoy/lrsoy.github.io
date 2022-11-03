@@ -1,28 +1,17 @@
-/* Class based dark mode */
-
-html.dark .shiki-light {
-  display: none;
-}
-
-html:not(.dark) .shiki-dark {
-  display: none;
-}
-
-
-.lrsoy-prose pre:not(.shiki) {
+.prose pre:not(.shiki) {
   padding: 0;
   margin: 0;
   background: transparent;
 }
 
-.lrsoy-prose .shiki {
+.prose .shiki {
   font-family: 'DM Mono', 'Input Mono', 'Fira Code', monospace;
   font-size: 1.05em;
   line-height: 1.4;
   margin: 0.5em 0;
 }
 
-.lrsoy-prose img {
+.prose img {
   width: 100%;
 }
 
@@ -34,27 +23,42 @@ html:not(.dark) .shiki-dark {
   background: #0e0e0e !important;
 }
 
-.lrsoy-prose a {
+html.dark .shiki-light {
+  display: none;
+}
+
+html:not(.dark) .shiki-dark {
+  display: none;
+}
+
+.prose {
+  --fg: #555;
+  --fg-deep: #222;
+  --fg-deeper: #000;
+  color: var(--fg);
+}
+
+.prose a {
   font-weight: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   transition: border 0.3s ease-in-out;
 }
 
-.lrsoy-prose a:hover {
+.prose a:hover {
   border-bottom: 1px solid var(--fg);
 }
 
-.lrsoy-prose a code {
+.prose a code {
   color: inherit;
 }
 
-.lrsoy-prose hr {
+.prose hr {
   width: 50px;
   margin: 2em auto;
 }
 
-html.dark .lrsoy-prose {
+html.dark .prose {
   --fg: #bbb;
   --fg-deep: #ddd;
   --fg-deeper: #fff;
@@ -102,7 +106,7 @@ h6:focus .header-anchor {
   opacity: 0.5;
 }
 
-.lrsoy-prose blockquote {
+.prose blockquote {
   font-weight: normal;
   font-style: normal;
   line-height: 1.5em;
@@ -110,25 +114,25 @@ h6:focus .header-anchor {
   opacity: 0.8;
 }
 
-.lrsoy-prose blockquote> :first-child {
+.prose blockquote> :first-child {
   margin-top: 0;
 }
 
-.lrsoy-prose blockquote> :last-child {
+.prose blockquote> :last-child {
   margin-bottom: 0;
 }
 
-.lrsoy-prose blockquote p:first-of-type::before {
+.prose blockquote p:first-of-type::before {
   content: none;
 }
 
-.lrsoy-prose blockquote p:first-of-type::after {
+.prose blockquote p:first-of-type::after {
   content: none;
 }
 
 .table-of-contents {
   position: fixed;
-  top: 80px;
+  top: 140px;
   padding-top: 70px;
   font-size: 0.8em;
   right: 10px;
@@ -137,13 +141,13 @@ h6:focus .header-anchor {
   overflow-y: auto;
   overflow-x: hidden;
   text-overflow: ellipsis;
-  opacity: 0;
+  opacity: 0.5;
   transition: all .4s ease-out;
 }
 
-.table-of-contents:hover {
+/* .table-of-contents:hover {
   opacity: 0.5;
-}
+} */
 
 .table-of-contents ul>li::before {
   display: none;

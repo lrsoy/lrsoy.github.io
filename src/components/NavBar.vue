@@ -4,13 +4,19 @@
 </script>
 <template>
   <header>
-    <router-link to="/" focusable="false" class="logo-icon">
-      <img src="/logo-removebg-preview.png" alt="">
-    </router-link>
-    <nav class="nav">
+    <nav>
+      <router-link to="/" title="Blog">
+        <span>/</span>
+      </router-link>
       <router-link to="/posts" title="Blog">
         <span>Blog</span>
       </router-link>
+      <a href="https://www.instagram.com/lrsoy_/" target="_blank" title="Instagram">
+        <Ins />
+      </a>
+      <a href="https://github.com/lrsoy" target="_blank" title="Github">
+        <Github />
+      </a>
       <ToggleTheme />
     </nav>
   </header>
@@ -18,21 +24,12 @@
 
 <style lang="scss">
 header {
-  @apply w-full z-40;
-
-  .logo-icon {
-    @apply fixed;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    user-select: none;
-
-    img {
-      @apply w-20 h-20 m-1;
-    }
-  }
-
   nav {
-    @apply w-full p-8 box-border flex justify-end items-center gap-5;
+    @apply w-full p-8 box-border flex justify-end gap-5;
+
+    a {
+      @apply text-[#787878];
+    }
   }
 }
 </style>  
