@@ -12,8 +12,12 @@ defineProps<{ notes: Record<string, any[]> }>()
     <div class="notes">
       <router-link v-for="(item, index) in notes[key]" :key="index" :to="item.link"
         class="item relative flex items-center" :title="item.name">
+        <div class="pt-2 pr-5" v-if="item.icon">
+          <div class="text-3xl opacity-50 " :class="item.icon || 'i-carbon-unknown'" />
+        </div>
+        <span class="text-base "></span>
         <div class="flex-auto">
-          <div cla ss="text-normal">{{ item.name }}</div>
+          <div class="text-normal">{{ item.name }}</div>
           <div class="desc text-sm opacity-50 font-normal" v-html="item.desc" />
         </div>
       </router-link>
