@@ -78,6 +78,16 @@ notes:
       link: '/'
       desc: 'github actions 笔记'
       icon: "i-simple-icons-githubactions"
+  Server: 
+    - name: 'Node'
+      link: '/'
+      desc: 'Node 笔记'
+      icon: "i-mdi-nodejs"
+  Test: 
+    - name: 'Vitest'
+      link: '/'
+      desc: 'Vitest笔记'
+      icon: "i-simple-icons-vitest"
 ---
 
 <SubNav />

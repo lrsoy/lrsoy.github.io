@@ -1,5 +1,7 @@
-import { useDark } from '@vueuse/core'
+import { useDark, useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
+
+export const englishOnly = useStorage('antfu-english-only', false)
 
 export const isDark = useDark()
 

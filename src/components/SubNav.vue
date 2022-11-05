@@ -8,10 +8,10 @@ const route = useRoute()
 </script>
 <template>
   <div class="sub-nav text-xl flex wrap gap-3  mb-0">
-    <router-link to="/" class="!border-none !font-400" :class="route.path === '/posts' ? '' : inactiveStyle">
+    <router-link to="/posts" class="!border-none !font-400" :class="route.path === '/posts' ? '' : inactiveStyle">
       知识汇总
     </router-link>
-    <router-link to="/" class="!border-none !font-400" :class="route.path === '/ss' ? '' : inactiveStyle">
+    <router-link to="/question" class="!border-none !font-400" :class="route.path === '/question' ? '' : inactiveStyle">
       问题收集
     </router-link>
     <router-link to="/" class="!border-none !font-400" :class="route.path === '/ba' ? '' : inactiveStyle">
