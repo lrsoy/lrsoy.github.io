@@ -7,7 +7,7 @@ display: ''
 notes: 
   Basal: 
     - name: 'HTML'
-      link: "/"
+      link: "/html"
       desc: "Html笔记"
       icon: 'i-ri-html5-fill'
     - name: 'CSS'
@@ -88,6 +88,11 @@ notes:
       link: '/'
       desc: 'Vitest笔记'
       icon: "i-simple-icons-vitest"
+  Other: 
+    - name: '算法'
+      link: '/'
+      desc: 'LeetCode 算法'
+      icon: "i-simple-icons-leetcode"
 ---
 
 <SubNav />

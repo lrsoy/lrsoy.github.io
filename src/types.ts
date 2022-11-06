@@ -9,3 +9,8 @@ export interface Post {
   recording?: string
   upcoming?: boolean
 }
+
+export interface SubNav {
+  path: string,
+  title: string
+}

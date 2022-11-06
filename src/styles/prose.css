@@ -5,7 +5,7 @@
   font-size: 1rem;
   line-height: 1.75;
   border-radius: 6px;
-  background-color: var(--c-prose-bg);
+  /* background-color: var(--c-prose-bg); */
   box-sizing: border-box;
 }
 

@@ -1,5 +1,5 @@
 :root {
-  --c-bg: #f1f5f8;
+  --c-bg: #ffffff;
   --c-scrollbar: #eee;
   --c-scrollbar-hover: #bbb;
   --c-svg-bg: #000000;
@@ -34,13 +34,19 @@ body {
   z-index: -1;
   width: 100%;
   height: 100%;
+  /* background-image: url('/app-bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); */
+  /* transform: scale(1.2); */
   background-color: var(--c-svg-bg);
   -webkit-mask-image: url('/bg.svg');
   mask-image: url('/bg.svg');
 }
 
 html {
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 

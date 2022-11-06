@@ -9,7 +9,7 @@
         <span>/</span>
       </router-link>
       <router-link to="/posts" title="Blog">
-        <span>Blog</span>
+        <span>知识汇总</span>
       </router-link>
       <a href="https://www.instagram.com/lrsoy_/" target="_blank" title="Instagram">
         <Ins />

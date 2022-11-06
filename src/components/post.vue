@@ -1,21 +1,38 @@
 <!-- Post 内容区域，具体怎么实现的还在考察-->
 
 <script setup lang="ts">
+import { useStorage, useSessionStorage } from '@vueuse/core'
 import { formatDate } from '~/logics'
-import { ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
+import { ref, watch, computed, onUnmounted } from 'vue'
+import { useRouter, useRoute, onBeforeRouteLeave } from 'vue-router'
 const { frontmatter } = defineProps({
   frontmatter: {
     type: Object,
     required: true,
   },
 })
+const path = useStorage('path', '/') // 上一个路由路径
+onBeforeRouteLeave((to, from) => { // to 去哪里 ， from 从哪里来的
+  if (from) {
+    path.value = from.fullPath
+  }
+})
 
 const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
-
-
+const link = computed(() => {
+  const i = route.path.split('/').slice(0, -1).join('/')
+  const isHas = router.getRoutes().some(s => s.path === i)
+  if (!isHas) {
+    return path.value
+  }
+  return i
+})
+console.log(link);
+onUnmounted(() => {
+  console.log('组件卸载了');
+})
 
 </script>
 <template>
@@ -30,8 +47,7 @@ const content = ref<HTMLDivElement>()
     <slot></slot>
   </article>
   <div v-if="route.path !== '/'" class="go-back prose">
-    <router-link :to="route.path.split('/').slice(0, -1).join('/') || '/'"
-      class="font-mono no-underline opacity-50 hover:opacity-75">cd ..</router-link>
+    <router-link :to="link || '/'" class="font-mono no-underline opacity-50 hover:opacity-75">cd ..</router-link>
   </div>
 </template>
 
