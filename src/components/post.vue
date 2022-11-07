@@ -25,14 +25,14 @@ const link = computed(() => {
   const i = route.path.split('/').slice(0, -1).join('/')
   const isHas = router.getRoutes().some(s => s.path === i)
   if (!isHas) {
+    if (path.value.split('/').slice(0, -1).length > 1) {
+      return '/'
+    }
     return path.value
   }
   return i
 })
-console.log(link);
-onUnmounted(() => {
-  console.log('组件卸载了');
-})
+
 
 </script>
 <template>
