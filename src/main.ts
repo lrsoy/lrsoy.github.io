@@ -5,12 +5,22 @@ import './styles/markdown/markdown.css'
 import 'uno.css'
 import './styles/tailwindcss/index.css'
 
-import routes from 'pages-generated'
+import autoRoutes from 'pages-generated'
 import NProgress from 'nprogress'
 import { ViteSSG } from 'vite-ssg'
 import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat.js'
 import App from './App.vue'
+
+const routes = autoRoutes.map((i) => {
+  return {
+    ...i,
+    alias: i.path.endsWith('/')
+      ? `${i.path}index.html`
+      : `${i.path}.html`,
+  }
+})
+
 
 const scrollBehavior = (to: any, from: any, savedPosition: any) => {
 

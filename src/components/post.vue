@@ -24,6 +24,8 @@ const content = ref<HTMLDivElement>()
 const link = computed(() => {
   const i = route.path.split('/').slice(0, -1).join('/')
   const isHas = router.getRoutes().some(s => s.path === i)
+  console.log(isHas);
+
   if (!isHas) {
     if (path.value.split('/').slice(0, -1).length > 1) {
       return '/'

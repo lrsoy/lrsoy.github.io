@@ -78,7 +78,6 @@
         @apply border-solid bottom-0 border-x-[5px] border-t-0 border-b-8 border-x-transparent border-t-transparent border-b-white
       }
     }
-
   }
 
   .two::before {
