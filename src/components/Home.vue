@@ -2,24 +2,25 @@
 
 <script setup lang="ts">
 </script>
+
 <template>
   <div class="home-container">
-    <div class="book one"></div>
+    <div class="book one" />
     <div class="book two">
-      <span></span>
+      <span />
     </div>
-    <div class="book three"></div>
-    <div class="book four"></div>
-    <div class="book five"></div>
+    <div class="book three" />
+    <div class="book four" />
+    <div class="book five" />
     <div class="child">
       <div class="head">
-        <div class="hair"></div>
-        <span class="rtch"></span>
-        <span class="glasses"></span>
+        <div class="hair" />
+        <span class="rtch" />
+        <span class="glasses" />
       </div>
       <div class="body">
-        <div class="hand-one"></div>
-        <div class="hand-two"></div>
+        <div class="hand-one" />
+        <div class="hand-two" />
         <div class="book-read">
           <span class="letter r">R</span>
           <span class="letter e">E</span>
@@ -28,8 +29,8 @@
         </div>
       </div>
       <div class="legs">
-        <div class="leg-one"></div>
-        <div class="leg-two"></div>
+        <div class="leg-one" />
+        <div class="leg-two" />
       </div>
     </div>
   </div>

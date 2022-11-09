@@ -1,19 +1,17 @@
-<!-- ListPosts 列表组件-->
+<!-- ListPosts 列表组件 -->
 
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { formatDate, englishOnly } from '~/logics'
+import { englishOnly, formatDate } from '~/logics'
 import type { Post } from '~/types'
-const router = useRouter()
-
 const props = defineProps<{
-  address?: string,
-  type?: string,
+  address?: string
+  type?: string
   posts?: Post[]
 }>()
 
-
+const router = useRouter()
 
 const routes: Post[] = router.getRoutes()
   .filter(f => f.path.startsWith(props.address as string) && f.meta.frontmatter.date)
@@ -33,6 +31,7 @@ const posts = computed(() => (props.posts || routes))
 const getYear = (a: Date | string | number) => new Date(a).getFullYear()
 const isSameYear = (a: Date | string | number, b: Date | string | number) => a && b && getYear(a) === getYear(b)
 </script>
+
 <template>
   <ul>
     <template v-for="route, idx in posts" :key="route.path">

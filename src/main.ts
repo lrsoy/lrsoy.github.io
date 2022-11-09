@@ -1,5 +1,5 @@
 // import { createApp } from 'vue'
-import "./styles/index.css"
+import './styles/index.css'
 import './styles/prose.css'
 import './styles/markdown/markdown.css'
 import 'uno.css'
@@ -21,9 +21,7 @@ const routes = autoRoutes.map((i) => {
   }
 })
 
-
 const scrollBehavior = (to: any, from: any, savedPosition: any) => {
-
   if (savedPosition)
     return savedPosition
   else
@@ -39,7 +37,7 @@ export const createApp = ViteSSG(
       router.beforeEach(() => { NProgress.start() })
       router.afterEach(() => { NProgress.done() })
     }
-  }
+  },
 )
 
 // const app = createApp(App)

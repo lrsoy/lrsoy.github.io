@@ -1,4 +1,4 @@
-<!-- ToggleTheme 切换主题-->
+<!-- ToggleTheme 切换主题 -->
 
 <script setup lang='ts'>
 import { isDark } from '~/logics'

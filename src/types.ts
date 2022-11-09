@@ -11,6 +11,6 @@ export interface Post {
 }
 
 export interface SubNav {
-  path: string,
+  path: string
   title: string
 }

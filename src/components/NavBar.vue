@@ -1,7 +1,8 @@
-<!-- NavBar 导航条-->
+<!-- NavBar 导航条 -->
 
 <script setup lang="ts">
 </script>
+
 <template>
   <header>
     <nav>
@@ -32,4 +33,4 @@ header {
     }
   }
 }
-</style>  
+</style>

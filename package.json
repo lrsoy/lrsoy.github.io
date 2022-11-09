@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite --port 4000 --open",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.ts,.html --fix"
   },

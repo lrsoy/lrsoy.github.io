@@ -11,13 +11,13 @@ import Markdown from 'vite-plugin-vue-markdown'
 import Shiki from 'markdown-it-shiki'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
-import { slugify } from './scripts/slugify'
 import TOC from 'markdown-it-table-of-contents'
 import emoji from 'markdown-it-emoji'
 
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import UnoCSS from 'unocss/vite'
+import { slugify } from './scripts/slugify'
 
 // https://vitejs.dev/config/
 export default defineConfig(() => { // { command, mode }
@@ -64,7 +64,7 @@ export default defineConfig(() => { // { command, mode }
         ],
       }),
 
-      Pages({  // vite-plugin-pages 的配置
+      Pages({ // vite-plugin-pages 的配置
         extensions: ['vue', 'md'],
         pagesDir: 'pages',
         extendRoute(route) {
@@ -79,7 +79,6 @@ export default defineConfig(() => { // { command, mode }
           return route
         },
       }),
-
 
       Markdown({
         wrapperComponent: 'post',
@@ -123,7 +122,7 @@ export default defineConfig(() => { // { command, mode }
       Icons({
         defaultClass: 'inline',
         defaultStyle: 'vertical-align: sub;',
-      })
+      }),
 
     ],
 
