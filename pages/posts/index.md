@@ -50,7 +50,7 @@ notes:
       icon: "i-simple-icons-rollupdotjs"
   Package Management Tool:
     - name: 'npm'
-      link: '/'
+      link: '/npm'
       desc: 'npm笔记'
       icon: "i-teenyicons-npm-outline"
     - name: 'yarn'

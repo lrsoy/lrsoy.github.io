@@ -13,6 +13,7 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import TOC from 'markdown-it-table-of-contents'
 import emoji from 'markdown-it-emoji'
+import highlightLines from 'markdown-it-highlight-lines'
 
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -89,10 +90,11 @@ export default defineConfig(() => { // { command, mode }
         },
         markdownItSetup(md) {
           md.use(Shiki, {
-            theme: {
-              light: 'vitesse-light',
-              dark: 'vitesse-dark',
-            },
+            theme: 'dracula'
+            // theme: {
+            //   light: 'vitesse-light',
+            //   dark: 'vitesse-dark',
+            // },
           })
           md.use(anchor, {
             slugify,
@@ -116,6 +118,7 @@ export default defineConfig(() => { // { command, mode }
           })
 
           md.use(emoji)
+          md.use(highlightLines)
         },
       }),
 
