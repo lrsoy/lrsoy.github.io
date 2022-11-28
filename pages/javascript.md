@@ -1,5 +1,5 @@
 ---
-title: "html - Lrsoy"
+title: "JavaScript - Lrsoy"
 display: ''
 nav:
   - title: "HTML"
@@ -13,4 +13,4 @@ nav:
 ---
 <SubNav :nav="frontmatter.nav" />
 
-<ListPosts :address="'/basal'" type="html" />
+<ListPosts :address="'/basal'" type="javascript" />

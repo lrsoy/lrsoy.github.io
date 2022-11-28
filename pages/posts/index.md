@@ -11,15 +11,15 @@ notes:
       desc: "Html笔记"
       icon: 'i-ri-html5-fill'
     - name: 'CSS'
-      link: "/"
+      link: "/css"
       desc: "css笔记"
       icon: 'i-ion-logo-css3'
     - name: 'JavaScript'
-      link: "/"
+      link: "/javascript"
       desc: "javascript笔记"
       icon: 'i-teenyicons-javascript-solid'
     - name: 'TypeScript'
-      link: "/"
+      link: "/typescript"
       desc: "TypeScript笔记"
       icon: 'i-akar-icons-typescript-fill'
   Frame:
