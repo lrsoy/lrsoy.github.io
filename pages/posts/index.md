@@ -70,12 +70,8 @@ notes:
       link: '/'
       desc: 'github笔记'
       icon: "i-bi-github"
-    - name: 'github pages'
-      link: '/'
-      desc: 'github pages 笔记'
-      icon: "i-bi-github"
     - name: 'github actions'
-      link: '/'
+      link: '/basal/github-actions'
       desc: 'github actions 笔记'
       icon: "i-simple-icons-githubactions"
   Server: 
