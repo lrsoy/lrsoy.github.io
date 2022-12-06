@@ -87,3 +87,5 @@ jobs: # 具体执行的任务
     4. 点击 **Generate new token**
     ![](/public/images/github-actions-new-token-info.png)
 3. [方式二](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
+
+
