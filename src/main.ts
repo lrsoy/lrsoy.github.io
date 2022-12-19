@@ -1,4 +1,3 @@
-// import { createApp } from 'vue'
 import './styles/index.css'
 import './styles/prose.css'
 import './styles/markdown/markdown.css'
