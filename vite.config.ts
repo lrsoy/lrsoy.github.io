@@ -23,7 +23,7 @@ import { slugify } from './scripts/slugify'
 // https://vitejs.dev/config/
 export default defineConfig(() => { // { command, mode }
   return {
-    base:"./",
+    base:"/",
     resolve: {
       alias: [
         {
