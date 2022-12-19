@@ -1,0 +1,1 @@
+.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;padding-top:.5rem;padding-bottom:.5rem}.notes a.item{padding:.8em 1em;background:transparent;font-size:1.1rem}.notes a.item:hover{background:rgba(136,136,136,.031372549)}
