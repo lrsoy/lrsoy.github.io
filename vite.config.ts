@@ -128,7 +128,7 @@ export default defineConfig(() => { // { command, mode }
       }),
 
     ],
-
+    base: "./",
     build: {
       rollupOptions: {
         onwarn(warning, next) {
