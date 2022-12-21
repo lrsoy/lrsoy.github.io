@@ -26,7 +26,7 @@ export default defineConfig(() => { // { command, mode }
     resolve: {
       alias: [
         {
-          find: '~',
+          find: '~/',
           replacement: `${resolve(__dirname, 'src')}/`,
         },
       ],
