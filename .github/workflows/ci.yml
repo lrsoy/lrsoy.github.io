@@ -22,22 +22,35 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2.6.0
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.5.1
+      - uses: actions/checkout@v2
         with: 
-          node-version: 16.x
-      - name: install dependencies
+          persist-credentials: false
+      - name: install nodejs
+        uses: actions/setup-node@v3.4.1
+        with: 
+           node-version: "16.x"
+      # Install project dependencies
+      - name: install rely
         run: npm install
-      - name: build
-        run: npm run build
+      # package the project
+      - name: build app
+        run: npm run docs:build
+      # deploy to GitHub Pages
       - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          branch: gh-pages
-          folder: dist
-          token: ${{ secrets.ACCESS_TOKEN }}
-          
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: /dist
+
+
+
+
+
+
+
+
+
           
           
         
