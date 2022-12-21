@@ -55,7 +55,7 @@ export default defineConfig(() => { // { command, mode }
         ],
       }),
       Components({
-        extensions: ['vue', 'tsx'],
+        extensions: ['vue', 'md'],
         dts: true,
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
         resolvers: [
