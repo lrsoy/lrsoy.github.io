@@ -21,8 +21,7 @@ import UnoCSS from 'unocss/vite'
 import { slugify } from './scripts/slugify'
 
 // https://vitejs.dev/config/
-export default defineConfig(() => { // { command, mode }
-  return {
+export default defineConfig({
     resolve: {
       alias: [
         {
@@ -137,11 +136,8 @@ export default defineConfig(() => { // { command, mode }
         },
       },
     },
-
     ssgOptions: {
       formatting: 'minify',
       format: 'cjs',
-    },
-
-  }
+    }
 })
