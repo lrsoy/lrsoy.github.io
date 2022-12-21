@@ -22,6 +22,7 @@ import { slugify } from './scripts/slugify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: "/",
     resolve: {
       alias: [
         {
@@ -127,7 +128,6 @@ export default defineConfig({
       }),
 
     ],
-    base: "./",
     build: {
       rollupOptions: {
         onwarn(warning, next) {
