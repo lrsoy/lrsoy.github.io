@@ -11,7 +11,7 @@ const props = defineProps<{
 const navData = [
   { title: '知识汇总', path: '/posts' },
   { title: '问题收集', path: '/question' },
-  { title: '其他', path: '/ba' },
+  { title: '其他', path: '/' },
 ]
 
 const data = computed(() => (props.nav || navData))
