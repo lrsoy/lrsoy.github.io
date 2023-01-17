@@ -20,18 +20,27 @@ onBeforeRouteLeave((to, from) => { // to 去哪里 ， from 从哪里来的
 const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
+// const link = computed(() => {
+//   const i = route.path.split('/').slice(0, -1).join('/')
+//   const isHas = router.getRoutes().some(s => s.path === i)
+//   if (!isHas) {
+//     if (path.value.split('/').slice(0, -1).length > 1)
+//       return '/'
+// 
+//     return path.value
+//   }
+//   return i
+// })
+// 
+
 const link = computed(() => {
   const i = route.path.split('/').slice(0, -1).join('/')
-  const isHas = router.getRoutes().some(s => s.path === i)
+  const isHas = router.getRoutes().some(s => s.path === route.path)
   if (!isHas) {
-    if (path.value.split('/').slice(0, -1).length > 1)
-      return '/'
-
-    return path.value
+    return '/'
   }
   return i
 })
-
 
 onMounted(() => {
   const navigate = () => {
