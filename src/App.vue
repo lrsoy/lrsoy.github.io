@@ -16,6 +16,7 @@ useHead({
     <div class="svg-bg" />
     <router-view />
   </main>
+  <!-- <footer>测试内容</footer> -->
 </template>
 
 <style lang="scss">

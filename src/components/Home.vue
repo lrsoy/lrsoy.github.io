@@ -1,5 +1,18 @@
 <!-- Home -->
 
+<!-- <script setup lang="ts">
+</script>
+<template>
+  <div class="home">
+    创建组件
+  </div>
+</template>
+
+<style  lang="scss">
+
+</style> -->
+
+
 <script setup lang="ts">
 </script>
 
