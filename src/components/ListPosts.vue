@@ -30,6 +30,7 @@ const routes: Post[] = router.getRoutes()
 const posts = computed(() => (props.posts || routes))
 const getYear = (a: Date | string | number) => new Date(a).getFullYear()
 const isSameYear = (a: Date | string | number, b: Date | string | number) => a && b && getYear(a) === getYear(b)
+
 </script>
 
 <template>

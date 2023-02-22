@@ -18,15 +18,15 @@ const data = computed(() => (props.nav || navData))
 
 const inactiveStyle = 'opacity-20 hover:opacity-50'
 const route = useRoute()
+
+
 </script>
 
 <template>
   <div class="sub-nav text-xl flex wrap gap-3  mb-0">
     <template v-for="(item, idx) in data" :key="idx">
-      <router-link
-        :to="item.path" class="!border-none !font-400"
-        :class="route.path === item.path ? '' : inactiveStyle"
-      >
+      <router-link :to="item.path" class="!border-none !font-400"
+        :class="route.path === item.path ? '' : inactiveStyle">
         {{ item.title }}
       </router-link>
     </template>

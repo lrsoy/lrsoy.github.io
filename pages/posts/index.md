@@ -7,19 +7,19 @@ display: ''
 notes: 
   Basal: 
     - name: 'HTML'
-      link: "/html"
+      link: "/posts/html"
       desc: "Html笔记"
       icon: 'i-ri-html5-fill'
     - name: 'CSS'
-      link: "/css"
+      link: "/posts/css"
       desc: "css笔记"
       icon: 'i-ion-logo-css3'
     - name: 'JavaScript'
-      link: "/javascript"
+      link: "/posts/javascript"
       desc: "javascript笔记"
       icon: 'i-teenyicons-javascript-solid'
     - name: 'TypeScript'
-      link: "/typescript"
+      link: "/posts/typescript"
       desc: "TypeScript笔记"
       icon: 'i-akar-icons-typescript-fill'
   Frame:
@@ -35,6 +35,10 @@ notes:
       link: '/'
       desc: 'React 笔记'
       icon: "i-akar-icons-react-fill"
+    - name: 'Electron桌面端'
+      link: '/posts/electron'
+      desc: '桌面端应用开发'
+      icon: 'i-ion-logo-electron'
   Frontend Tooling:
     - name: 'Vite'
       link: '/'

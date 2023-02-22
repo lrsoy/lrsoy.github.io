@@ -3,12 +3,12 @@ title: "npm - Lrsoy"
 display: ''
 nav:
   - title: "npm"
-    path: "/npm"
+    path: "/posts/npm"
   - title: "yarn"
-    path: '/yarn'
+    path: '/posts/yarn'
   - title: "pnpm"
-    path: /pnpm
+    path: '/posts/pnpm'
 ---
 <SubNav :nav="frontmatter.nav" />
 
-<ListPosts :address="'/basal'" type="npm" />
+<ListPosts :address="'/posts'" type="npm" />

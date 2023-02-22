@@ -3,14 +3,14 @@ title: "html - Lrsoy"
 display: ''
 nav:
   - title: "HTML"
-    path: "/html"
+    path: "/posts/html"
   - title: "CSS"
-    path: '/css'
+    path: '/posts/css'
   - title: "JavaScript"
-    path: /javascript
+    path: '/posts/javascript'
   - title: "TypeScript"
-    path: '/typescript'
+    path: '/posts/typescript'
 ---
 <SubNav :nav="frontmatter.nav" />
 
-<ListPosts :address="'/basal'" type="html" />
+<ListPosts :address="'/posts'" type="html" />
