@@ -5,9 +5,9 @@ nav:
   - title: "npm"
     path: "/posts/npm"
   - title: "yarn"
-    path: '/posts/yarn'
+    path: '/posts'
   - title: "pnpm"
-    path: '/posts/pnpm'
+    path: '/posts'
 ---
 <SubNav :nav="frontmatter.nav" />
 

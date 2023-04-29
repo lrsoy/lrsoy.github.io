@@ -54,7 +54,7 @@ notes:
       icon: "i-simple-icons-rollupdotjs"
   Package Management Tool:
     - name: 'npm'
-      link: '/npm'
+      link: '/posts/npm'
       desc: 'npm笔记'
       icon: "i-teenyicons-npm-outline"
     - name: 'yarn'
@@ -75,7 +75,7 @@ notes:
       desc: 'github笔记'
       icon: "i-bi-github"
     - name: 'github actions'
-      link: '/basal/github-actions'
+      link: '/posts/github-actions'
       desc: 'github actions 笔记'
       icon: "i-simple-icons-githubactions"
   Server: 
@@ -85,7 +85,7 @@ notes:
       icon: "i-mdi-nodejs"
   Test: 
     - name: 'Vitest'
-      link: '/'
+      link: '/posts/vitest'
       desc: 'Vitest笔记'
       icon: "i-simple-icons-vitest"
   Other: 

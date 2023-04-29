@@ -55,6 +55,4 @@ const isSameYear = (a: Date | string | number, b: Date | string | number) => a &
   </ul>
 </template>
 
-<style  scoped>
-
-</style>
+<style  scoped></style>

@@ -13,4 +13,4 @@ nav:
 ---
 <SubNav :nav="frontmatter.nav" />
 
-<ListPosts :address="'/posts'" type="html" />
+<ListPosts :address="'/posts/html'" type="html" />

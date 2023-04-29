@@ -11,11 +11,11 @@ const { frontmatter } = defineProps({
     required: true,
   },
 })
-const path = useStorage('path', '/') // 上一个路由路径
-onBeforeRouteLeave((to, from) => { // to 去哪里 ， from 从哪里来的
-  if (from)
-    path.value = from.fullPath
-})
+// const path = useStorage('path', '/') // 上一个路由路径
+// onBeforeRouteLeave((to, from) => { // to 去哪里 ， from 从哪里来的
+//   if (from)
+//     path.value = from.fullPath
+// })
 
 const router = useRouter()
 const route = useRoute()
