@@ -4,6 +4,10 @@
   --c-scrollbar-hover: #bbb;
   --c-svg-bg: #000000;
   --c-prose-bg: #ffffff;
+  --text-color: #f6f1e6;
+  --drops-color: #231d1c;
+  /* --c-svg-bg: #ffffff;
+  --c-prose-bg: #242424; */
   /* --c-nav-icon: # */
 }
 
@@ -19,8 +23,9 @@ html.dark {
   --c-bg: #050505;
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;
-  --c-svg-bg: #ffffff;
-  --c-prose-bg: #242424;
+  /* 
+  --c-svg-bg: #242424;
+  --c-prose-bg: #ffffff; */
 }
 
 body {

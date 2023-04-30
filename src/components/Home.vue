@@ -1,21 +1,152 @@
 <!-- Home -->
 
-<!-- <script setup lang="ts">
+<script setup>
 </script>
 <template>
-  <div class="home">
-    创建组件
+  <div>
+    暂时没想好添加什么
+  </div>
+</template>
+
+<style  scoped></style>
+
+<!-- <script setup lang="ts">
+import { Droppy } from '../hooks/use-protract-canvas'
+nextTick(() => {
+  Droppy()
+
+})
+</script> -->
+<!-- 
+<template>
+  <div class="canvas" ref="homeCanvas">
+    <div class="puddle" style="--x: 1.55em; --y: 3.73em">Roses are red</div>
+    <div class="puddle" style="--x: 1.5em; --y: 1.8em">Violets are blue</div>
+    <div class="puddle" style="--x: -1.5em; --y: -1.8em">Unexpected ";"</div>
+    <div class="puddle" style="--x: -1.3em; --y: -3.7em">On line 32</div>
   </div>
 </template>
 
 <style  lang="scss">
+.canvas {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  font-family: Georgia, serif;
+}
 
+.canvas--animated .puddle__letter {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.puddle {
+  position: absolute;
+  display: flex;
+  transform: rotate(var(--r, 0deg)) translate(calc(-50% - var(--x, 0)), calc(-50% - var(--y, 0)));
+  top: 50%;
+  left: 50%;
+  color: var(--text-color);
+  font-size: 5vmin;
+  white-space: pre;
+}
+
+.puddle__letter {
+  transform: translateY(800px);
+  padding: 0.1em 0.2em;
+  margin: -0.1em -0.2em;
+  will-change: transform;
+  -webkit-animation: drop 800ms var(--delay) ease-out forwards paused;
+  animation: drop 800ms var(--delay) ease-out forwards paused;
+}
+
+.combined-puddles {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+  filter: url(#drops-filter);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.combined-puddles .puddle__letter {
+  border-radius: 50%;
+  color: var(--drops-color);
+  background-color: currentColor;
+}
+
+.combined-puddles .puddle__letter--t-1 {
+  box-shadow: 0.0104643879em 0.0031094209em 0 0.3075368656em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-2 {
+  box-shadow: 0.0022523896em 0.0285876441em 0 0.3285216426em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-3 {
+  box-shadow: 0.0162090914em 0.0130844021em 0 0.2724253795em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-4 {
+  box-shadow: 0.027600763em 0.0299042638em 0 0.2626167649em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-5 {
+  box-shadow: 0.0249363683em 0.0234606286em 0 0.0339315909em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-6 {
+  box-shadow: 0.0055081252em 0.0286089479em 0 0.3225804369em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-7 {
+  box-shadow: 0.0069493993em 0.014507079em 0 0.3306404388em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-8 {
+  box-shadow: 0.0065660989em 0.0107514621em 0 0.050717128em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-9 {
+  box-shadow: 0.0296565133em 0.0162488239em 0 0.2790991674em currentColor;
+}
+
+.combined-puddles .puddle__letter--t-10 {
+  box-shadow: 0.0260130702em 0.020508263em 0 0.154297641em currentColor;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    transform: translate(0, 100vh);
+  }
+
+  80% {
+    transform: translate(0, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, 100vh);
+  }
+
+  80% {
+    transform: translate(0, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
 </style> -->
 
-
-<script setup lang="ts">
-</script>
-
+<!-- 
 <template>
   <div class="home-container">
     <div class="book one" />
@@ -472,4 +603,4 @@
     border-bottom: 3px solid #ff0051;
   }
 }
-</style>
+</style> -->
