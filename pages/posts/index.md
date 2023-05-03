@@ -67,7 +67,7 @@ notes:
       icon: "i-file-icons-pnpm"
   Git: 
     - name: 'git'
-      link: '/'
+      link: '/posts/git'
       desc: 'git笔记'
       icon: "i-teenyicons-git-solid"
     - name: 'github'

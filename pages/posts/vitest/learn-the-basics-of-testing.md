@@ -135,3 +135,8 @@ afterAll(() =>{
 2. Vitest Runner
 3. Jest Sbippets（推荐安装）
 4. Jest Runner（推荐安装）
+
+
+
+## 五、Vitest 调试技巧
+
