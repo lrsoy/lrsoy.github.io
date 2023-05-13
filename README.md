@@ -1,4 +1,4 @@
-# lrsoy.me
+# lrsoy.github.io
 My personal website
 
 
