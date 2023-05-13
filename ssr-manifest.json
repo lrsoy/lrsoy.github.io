@@ -41,63 +41,63 @@
   "src/App.vue?vue&type=script&setup=true&lang.ts": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.6902d29f.js-unocss-hash.css": [],
+  "assets/app.f5b5750f.js-unocss-hash.css": [],
   "pages/posts/vitest/learn-the-basics-of-testing.md": [
-    "/assets/learn-the-basics-of-testing.5dfbf89a.js"
+    "/assets/learn-the-basics-of-testing.80f89fd7.js"
   ],
   "pages/posts/vitest/index.md": [
-    "/assets/index.7169fcfd.js"
+    "/assets/index.2c00785d.js"
   ],
   "src/components/ListPosts.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/ListPosts.vue_vue_type_script_setup_true_lang.3a993b80.js"
+    "/assets/ListPosts.vue_vue_type_script_setup_true_lang.517dc0c6.js"
   ],
   "pages/posts/vitest/conception.md": [
-    "/assets/conception.ddf9ffb2.js"
+    "/assets/conception.ea2b2260.js"
   ],
   "pages/posts/typescript/index.md": [
-    "/assets/index.09fa32e9.js"
+    "/assets/index.fe91bbfb.js"
   ],
   "src/components/SubNav.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/SubNav.vue_vue_type_script_setup_true_lang.192a26a8.js"
+    "/assets/SubNav.vue_vue_type_script_setup_true_lang.9a2311fc.js"
   ],
   "pages/posts/npm/npm-outsourcing.md": [
-    "/assets/npm-outsourcing.aa4879ff.js"
+    "/assets/npm-outsourcing.9f454527.js"
   ],
   "pages/posts/npm/index.md": [
-    "/assets/index.973c6551.js"
+    "/assets/index.563e830e.js"
   ],
   "pages/posts/javascript/index.md": [
-    "/assets/index.37f4f1a7.js"
+    "/assets/index.07166098.js"
   ],
   "pages/posts/html/index.md": [
-    "/assets/index.6cf1c167.js"
+    "/assets/index.6bf8a0e9.js"
   ],
   "pages/posts/html/html-ssr-crshi.md": [
-    "/assets/html-ssr-crshi.f6f1ba97.js"
+    "/assets/html-ssr-crshi.51d49a5c.js"
   ],
   "pages/posts/css/index.md": [
-    "/assets/index.0d23f6e9.js"
+    "/assets/index.c22214aa.js"
   ],
   "pages/question/vueRouter-toggle-animation.md": [
-    "/assets/vueRouter-toggle-animation.ea5c9681.js"
+    "/assets/vueRouter-toggle-animation.fe9c3d51.js"
   ],
   "pages/question/index.md": [
-    "/assets/index.93bc4e03.js"
+    "/assets/index.83f43aa2.js"
   ],
   "src/components/ListNotes.vue?vue&type=script&setup=true&lang.ts": [
-    "/assets/index.95ac60a9.js",
+    "/assets/index.93c150c7.js",
     "/assets/index.f6a5f391.css"
   ],
   "src/components/ListNotes.vue?vue&type=style&index=0&lang.scss": [
-    "/assets/index.95ac60a9.js",
+    "/assets/index.93c150c7.js",
     "/assets/index.f6a5f391.css"
   ],
   "pages/posts/index.md": [
-    "/assets/index.95ac60a9.js",
+    "/assets/index.93c150c7.js",
     "/assets/index.f6a5f391.css"
   ],
   "public/images/github-actions.png": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -105,7 +105,7 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "public/images/github-actions-new-wf.png": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -113,7 +113,7 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "public/images/github-actions-actions-env.png": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -121,7 +121,7 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "public/images/github-actions-new-token.png": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -129,7 +129,7 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "public/images/github-actions-new-token-info.png": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -137,7 +137,7 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "pages/posts/github-actions.md": [
-    "/assets/github-actions.92af79f3.js",
+    "/assets/github-actions.21b033ff.js",
     "/assets/github-actions.6e6e05c0.png",
     "/assets/github-actions-new-wf.1366caad.png",
     "/assets/github-actions-actions-env.9798a473.png",
@@ -145,12 +145,12 @@
     "/assets/github-actions-new-token-info.e8c48252.png"
   ],
   "pages/posts/git.md": [
-    "/assets/git.00984cf2.js"
+    "/assets/git.a11a4522.js"
   ],
   "pages/posts/electron.md": [
-    "/assets/electron.c20fa524.js"
+    "/assets/electron.58434b1d.js"
   ],
   "pages/[...404].md": [
-    "/assets/_...404_.37c7fa6b.js"
+    "/assets/_...404_.3c397a9f.js"
   ]
 }
